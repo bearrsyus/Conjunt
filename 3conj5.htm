@@ -34,21 +34,21 @@ N&#x00FA;meros Naturais, N&#x00FA;meros Reias e N&#x00FA;meros Complexos
 :root{
 	--strFontFace:       arial,helvetica,sans-serif;
 	--strFontSize:       small;
-	--strTextColor:      #000000;
-	--strTitleColor:     #000000;
+	--strTextColor:      #804040;
+	--strTitleColor:     #804040;
 
-	--strFuncLightColor: #ffffff;
-	--strFuncShadeColor: #7f7f7f;
+	--strFuncLightColor: #fffaf5;
+	--strFuncShadeColor: #7f7a76;
 	--strLinkColor:      #0000ff;
 	--strVLinkColor:     #800080;
 	
-	--strNavBarColor:    #80ffff;
-	--strNavLightColor:  #bfffff;
-	--strNavShadeColor:  #407f7f;
-	--strNavTextColor:   #000000;
+	--strNavBarColor:    #9b4e00;
+	--strNavLightColor:  #cda67f;
+	--strNavShadeColor:  #4d2700;
+	--strNavTextColor:   #ffffff;
 	
-	--strPageBGColor:    #8080ff;
-	--strExBGColor:      #ffffff;
+	--strPageBGColor:    #80ffff;
+	--strExBGColor:      #fff5ec;
 }
 
 body{
@@ -1247,7 +1247,7 @@ function CheckAnswers(){
 
 
 function TimesUp() {
-	document.getElementById('Timer').innerHTML = 'seu tempo acabou';
+	document.getElementById('Timer').innerHTML = 'Your time is over!';
 
 	TimeOver = true;
 	CheckAnswers();
@@ -1340,7 +1340,7 @@ function DownTime(){
 </div>
 
 <div id="InstructionsDiv" class="StdDiv">
-	<div id="Instructions">selecione a alternativa que corresponde a cada frase<br /><br />IMPORTANTE: ao clicar sem ter certeza da resposta sua pontua&#x00E7;&#x00E3;o pode cair</div>
+	<div id="Instructions"></div>
 </div>
 <div id="ContainerDiv">
 
@@ -1348,13 +1348,13 @@ function DownTime(){
 
 <div class="ExerciseContainer">
 
-<button id="CheckButton1" class="FuncButton" onclick="CheckAnswers()">&#160;verifique&#160;</button>
+<button id="CheckButton1" class="FuncButton" onclick="CheckAnswers()">&#160;Check&#160;</button>
 
 <div id="MatchDiv" style="text-align: center;">
 
 <table class="MatchTable">
 <tbody id="MatchItems">
-<tr><td id="L_0" class="LeftItem">- os n&#x00FA;meros racionais e irracionais formam juntos o conjunto dos n&#x00FA;meros</td>
+<tr><td id="L_0" class="LeftItem">Os n&#x00FA;meros racionais e irracionais formam juntos o conjunto dos n&#x00FA;meros</td>
 <td class="RightItem">
 <select onchange="JsonEx.AlignSelects(0)" id="R_0">
 <option value="-1">???</option>
@@ -1368,7 +1368,7 @@ function DownTime(){
 </td>
 <td> </td>
 </tr>
-<tr><td id="L_1" class="LeftItem">- &#x00E9; a raiz quadrada de &#x2013;1</td>
+<tr><td id="L_1" class="LeftItem">&#x00E9; a raiz quadrada de &#x2013;1</td>
 <td class="RightItem">
 <select onchange="JsonEx.AlignSelects(1)" id="R_1">
 <option value="-1">???</option>
@@ -1382,7 +1382,7 @@ function DownTime(){
 </td>
 <td> </td>
 </tr>
-<tr><td id="L_2" class="LeftItem">- o conjunto dos n&#x00FA;meros ________ foi criado para resolver equa&#x00E7;&#x00F5;es que n&#x00E3;o t&#x00EA;m solu&#x00E7;&#x00E3;o no conjunto dos reais.</td>
+<tr><td id="L_2" class="LeftItem">o conjunto dos n&#x00FA;meros ________ foi criado para resolver equa&#x00E7;&#x00F5;es que n&#x00E3;o t&#x00EA;m solu&#x00E7;&#x00E3;o no conjunto dos reais.</td>
 <td class="RightItem">
 <select onchange="JsonEx.AlignSelects(2)" id="R_2">
 <option value="-1">???</option>
@@ -1396,7 +1396,7 @@ function DownTime(){
 </td>
 <td> </td>
 </tr>
-<tr><td id="L_3" class="LeftItem">- a soma de dois n&#x00FA;meros naturais resultam em n&#x00FA;meros.</td>
+<tr><td id="L_3" class="LeftItem">a soma de dois n&#x00FA;meros naturais resultam em n&#x00FA;meros.</td>
 <td class="RightItem">
 <select onchange="JsonEx.AlignSelects(3)" id="R_3">
 <option value="-1">???</option>
@@ -1410,7 +1410,7 @@ function DownTime(){
 </td>
 <td> </td>
 </tr>
-<tr><td id="L_4" class="LeftItem">- representam a reta num&#x00E9;rica</td>
+<tr><td id="L_4" class="LeftItem">representam a reta num&#x00E9;rica</td>
 <td class="RightItem">
 <select onchange="JsonEx.AlignSelects(4)" id="R_4">
 <option value="-1">???</option>
@@ -1424,7 +1424,7 @@ function DownTime(){
 </td>
 <td> </td>
 </tr>
-<tr><td id="L_5" class="LeftItem">- s&#x00E3;o aqueles que utilizamos para contar</td>
+<tr><td id="L_5" class="LeftItem">s&#x00E3;o aqueles que utilizamos para contar</td>
 <td class="RightItem">
 <select onchange="JsonEx.AlignSelects(5)" id="R_5">
 <option value="-1">???</option>
@@ -1444,7 +1444,7 @@ function DownTime(){
 
 </div>
 
-<button id="CheckButton2" class="FuncButton" onclick="CheckAnswers()">&#160;verifique&#160;</button>
+<button id="CheckButton2" class="FuncButton" onclick="CheckAnswers()">&#160;Check&#160;</button>
 
 </div>
 
